@@ -1,9 +1,9 @@
 #!/bin/bash
 
 while true; do
-	mpv ~/Documents/confmorg/vidmorg.mp4 &
+	mpv --fs ~/Documents/confmorg/vidmorg.mp4 &
 	mpv_pid=$!
-	sleep 40
+	sleep 7
 	kill -INT $mpv_pid
-	sleep 2
+	sleep 1
 done
