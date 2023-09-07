@@ -5,7 +5,8 @@ while true; do
 
 #vlc vidmorgDELAY.mp4 --no-one-instance &
 #sleep 2
-	vlc vidmorg.mp4 & vlc vidmorg2.mp4 --no-one-instance &
+	vlc -f vidmorg.mp4 &
+	vlc -f vidmorg2.mp4 &
 
 #for testing :
 #sleep 7
