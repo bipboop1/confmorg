@@ -4,7 +4,7 @@ while true; do
 sleep 3
 export DISPLAY=:0
 sleep 1
-vlc -f vidmorg.mp4 &
+vlc -f --directx-device={,display,\\.\DISPLAY1} vidmorg.mp4 &
 sleep 1
 export DISPLAY=:0
 vlc -f blue.mp4 &
