@@ -1,19 +1,18 @@
 #!/bin/bash
 
 vlc  lettre_x_songood1.mp4 &
-pid="$!"
-sleep 5
+pidL="$!"
+sleep 1
 vlc avatarcadrage_sans_son.mp4 &
-pid="$!2"
-sleep 5
-name=$(wmctrl -lp | awk -vpid="$pid" '$3==pid{print $1}')
-name2=$(wmctrl -lp | awk -vpid="$pid" '$3==pid{print $1}')
-wmctrl -ir "$name2" -e 1,1921,1,1920,1080
-sleep 5
-wmctrl -ir "$name" -e 1,1,1,1920,1080
-sleep 4
+pidA="$!"
+sleep 1
+nameL=$(wmctrl -lp | awk -vpid="$pidL" '$3==pid{print $1}')
+nameA=$(wmctrl -lp | awk -vpid="$pidA" '$3==pid{print $1}')
+wmctrl -ir "$nameA" -e 1,1921,1,1920,1080
+sleep 3
+wmctrl -ir "$nameL" -e 1,1,1,1920,1080
+sleep 3
 #xdotool key --window "$name" "f"
-sleep 30
-kill "$pid"
-killall vlc
+sleep 15
+kill "$pidL" "$pidA"
 exit 0
