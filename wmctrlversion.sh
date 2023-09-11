@@ -1,7 +1,15 @@
 #!/bin/bash
 
-echo "launching AI avater morgzbaff..."
-echo "AI intelligenceqd "
+echo "launching AI avatar morgzbaff..."
+echo "Initializing Quantum Cognition Matrix..."
+echo "Calculating Probabilities of Multiverse occurences..."
+echo "Upgrading to Quantum AI Intelligence..."
+echo "Establishing Outer Limits of AI Consciousness..."
+echo "Harnessing the Power of Exo-Neural Networks..."
+echo "Quantum Entanglement of Thought and Code activated..."
+echo "Diving into the Quantum Ocean of Information..."
+echo "Interstellar Datastream Connection Established..."
+echo "AI Avatar Morgzbaff is now Online."
 vlc  lettre_x_songood1.mp4 &
 pidL="$!"
 sleep 1
