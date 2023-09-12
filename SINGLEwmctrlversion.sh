@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cvlc -f vidmorg.mp4 &
+vlc vidmorg.mp4 &
 pid="$!"
 sleep 5
 name=$(wmctrl -lp | awk -vpid="$pid" '$3==pid{print $1}')
