@@ -27,6 +27,7 @@ sleep 1
 xdotool key --window "$nameL" "f"
 sleep 0.5
 xdotool key --window "$nameA" "f"
-sleep 2m
+sleep 40m
+sleep 0.2
 kill "$pidL" "$pidA"
 exit 0
