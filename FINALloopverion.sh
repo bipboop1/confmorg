@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sleep 60
+sleep 5
 echo "launching AI avatar morgzbaff..."
 echo "Initializing Quantum Cognition Matrix..."
 echo "Calculating Probabilities of Multiverse occurences..."
