@@ -1,5 +1,6 @@
 #!/bin/bash
 
+sleep 60
 echo "launching AI avatar morgzbaff..."
 echo "Initializing Quantum Cognition Matrix..."
 echo "Calculating Probabilities of Multiverse occurences..."
@@ -12,9 +13,9 @@ echo "Diving into the Quantum Ocean of Information..."
 sleep 0.3
 echo "Interstellar Datastream Connection Established..."
 echo "AI Avatar Morgzbaff is now Online."
-vlc -L ~/Documents/confmorg/export91111111.mp4 &
+vlc -L ~/Documents/confmorg/export139.mp4 &
 pidL="$!"
-vlc -L ~/Documents/confmorg/avatar_cadrage_911.mp4 &
+vlc -L ~/Documents/confmorg/avatar_cadrage139.mp4 &
 pidA="$!"
 sleep 2
 nameL=$(wmctrl -lp | awk -vpid="$pidL" '$3==pid{print $1}')
